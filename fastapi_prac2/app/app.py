@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from schemas.item import Post_create, Post_response
 from typing import List
-
+from app.db import Post,create_db,get_db
 
 app = FastAPI()
 
